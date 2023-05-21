@@ -4,6 +4,11 @@
 <head>
    <script defer src="js/script.js"></script>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/container.css">
+   <link rel="stylesheet" href="css/button.css">
+   <link rel="stylesheet" href="css/section.css">
+
+   <link rel="stylesheet" href="css/form.css">
    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +20,20 @@
 </head>
 
 <body>
-   <form class="js-form">
-      <input class="js-newTask">
-      <button>Dodaj zadanie</button>
-   </form>
-   <ul class="js-tasks"></ul>
+   <div class="container">
+      <h1>Lista zadań</h1>
+      <section class="sectionInput">
+         <h2 class="form__heading">Wpisz nowe zadanie:</h2>
+         <form class="js-form form">
+            <input class="js-newTask form__input" id="addNewTask" placeholder="Co jest do zrobienia? " autofocus>
+            <button class="button">Dodaj zadanie</button>
+         </form>
+      </section>
+      <section class="sectionListTasks">
+         <h2>Lista zadań:</h2>
+         <ul class="js-tasks list"></ul>
+      </section>
+   </div>
 </body>
 
 </html>
