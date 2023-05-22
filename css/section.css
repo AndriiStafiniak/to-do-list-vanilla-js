@@ -3,26 +3,14 @@
    background-color: aliceblue;
    padding: 15px;
    margin: 0 0 8px 0;
-
 }
 
 .sectionListTasks {
    border: 1px solid grey;
    background-color: aliceblue;
    padding: 15px;
-
 }
 
-.sectionListTasks__button {
-   color: white;
-   width: 30px;
-   height: 30px;
-}
-
-.sectionListTasks__button--done {
-   background: greenyellow;
-}
-
-.sectionListTasks__button--remove {
-   background-color: red;
+.sectionListTasks__heading {
+   border-bottom: 1px solid grey;
 }

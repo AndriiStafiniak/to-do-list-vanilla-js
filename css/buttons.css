@@ -1,0 +1,21 @@
+.button {
+   background-color: teal;
+   color: antiquewhite;
+   margin: 0px 0px 0px 10px;
+}
+
+.ListTasks__button {
+   color: white;
+   width: 30px;
+   height: 30px;
+}
+
+.ListTasks__button--toggleDone {
+   background: rgb(17, 251, 33);
+   color: aliceblue;
+   align-self: center;
+}
+
+.ListTasks__button--remove {
+   background-color: red;
+}

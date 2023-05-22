@@ -22,7 +22,7 @@
    };
 
 
-   const bindEvents = () => {
+   const bindRemoveEvents = () => {
       const removeButton = document.querySelectorAll(".js-remove")
 
       removeButton.forEach((removeButton, index) => {
@@ -30,8 +30,11 @@
             removeTask(index);
          });
       });
+   };
 
-      const toggleDoneButtons = document.querySelectorAll(".js-done");
+
+   const bindToggleDoneEvents = () => {
+      const toggleDoneButtons = document.querySelectorAll(".js-toggleDone")
 
       toggleDoneButtons.forEach((toggleDoneButtons, index) => {
          toggleDoneButtons.addEventListener("click", () => {
@@ -45,23 +48,33 @@
       let htmlString = "";
       for (const task of tasks) {
          htmlString += `
-         <li ${task.done ? "style = \"text-decoration: line-through\"" : ""}> 
-         <button class = "js-done">Zrobione?</button> ${task.content} <button class="js-remove">Usuń</button>
-         </li>
+        <li
+        class="ListTasks--item js-task">
+        <button class="ListTasks__button ListTasks__button--toggleDone js-toggleDone">
+        ${task.done ? "✔" : ""} </button>
+        <span class="tasks__content ${task.done ? "listTask__content--done" : ""}"> ${task.content}</span>
+        <button class="ListTasks__button ListTasks__button--remove js-remove"> 🪣 </button>
+        </li>
          `;
       };
       document.querySelector(".js-tasks").innerHTML = htmlString;
-      bindEvents();
+      bindRemoveEvents();
+      bindToggleDoneEvents();
    };
 
 
    const onForSubmit = (event) => {
       event.preventDefault();
-      const newTaskContent = document.querySelector(".js-newTask").value.trim();
-      if (newTaskContent === "") {
-         return;
+
+      const newTaskElement = document.querySelector(".js-newTask");
+      const newTaskContent = newTaskElement.value.trim();
+
+      if (newTaskContent !== "") {
+         addNewTask(newTaskContent);
+         newTaskElement.value = "";
       };
-      addNewTask(newTaskContent);
+
+      newTaskElement.focus();
    };
 
 

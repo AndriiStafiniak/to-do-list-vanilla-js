@@ -4,22 +4,16 @@
    display: flex;
    flex-direction: row;
    flex-grow: 2;
-   /* flex-shrink: 1; */
-
-
 }
 
 .form__heading {
    border-bottom: 1px solid grey;
-
 }
 
 .form__input {
-   max-width: 500px;
+   padding: 10px;
    display: flex;
    flex-grow: 1;
-   margin: 15px;
-   justify-content: flex-start;
 }
 
 @media (max-width: 767px) {
@@ -28,5 +22,7 @@
       flex-wrap: wrap;
    }
 
-
+   .button {
+      margin: 10px 0px 0px 0px;
+   }
 }
