@@ -1,5 +1,8 @@
 # Hey, this is a simple to-do list. Made in pure JS 🙂
 
+## Demo:
+https://andriistafiniak.github.io/task-list/
+
 ![MainIMG](images/main.png)
 
 ## Technologies used:
