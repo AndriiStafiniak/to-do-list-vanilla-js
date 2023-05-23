@@ -1,16 +1,16 @@
-.sectionInput {
-   border: 1px solid grey;
-   background-color: aliceblue;
-   padding: 15px;
-   margin: 0 0 8px 0;
+.section {
+   margin: 10px 0;
+   background-color: white;
+   box-shadow: 0 0 5px #ddd;
 }
 
-.sectionListTasks {
-   border: 1px solid grey;
-   background-color: aliceblue;
-   padding: 15px;
+.section__heading {
+   border-bottom: 1px solid #ddd;
+   padding: 20px;
+   font-size: 20px;
+   margin: 0;
 }
 
-.sectionListTasks__heading {
-   border-bottom: 1px solid grey;
+.section__body {
+   padding: 20px;
 }

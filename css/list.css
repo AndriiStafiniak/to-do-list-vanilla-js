@@ -1,18 +1,19 @@
 .list {
    list-style-type: none;
    padding: 0;
+   margin: 0;
 }
 
-.listTask__content--done {
+.list__content--done {
    text-decoration: line-through;
 }
 
-.ListTasks--item {
+.list__item {
    display: grid;
    grid-template-columns: auto 1fr auto;
    gap: 10px;
    align-items: center;
-   border-bottom: 1px solid grey;
+   border-bottom: 1px solid #ddd;
    margin: 0px 0px 10px 0;
    padding: 5px;
 }

@@ -18,23 +18,27 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-   <title>Document</title>
+   <title>To-do list</title>
 </head>
 
 <body>
    <div class="container">
       <h1>Lista zadań</h1>
-      <section class="sectionInput">
-         <h2 class="form__heading">Wpisz nowe zadanie:</h2>
-         <form class="js-form form">
-            <input class="js-newTask form__input" id="addNewTask" placeholder="Co jest do zrobienia? " autofocus>
-            <button class="button">Dodaj zadanie</button>
-         </form>
+      <section class="section">
+         <h2 class="section__heading">Dodaj nowe zadanie</h2>
+         <div class="section__body">
+            <form class="js-form form">
+               <input class="js-newTask form__input" id="addNewTask" placeholder="Co jest do zrobienia? " autofocus>
+               <button class="button">Dodaj zadanie</button>
+            </form>
+         </div>
       </section>
-      <section class="sectionListTasks">
-         <h2 class="sectionListTasks__heading">Lista zadań:</h2>
-         <ul class="js-tasks list"></ul>
+      <section class="section">
+         <h2 class="section__heading">Lista zadań:</h2>
+         <div class="section__body">
+            <ul class="js-tasks list"></ul>
       </section>
+   </div>
    </div>
 </body>
 

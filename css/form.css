@@ -1,28 +1,20 @@
 .form {
-   background-color: aliceblue;
-   padding: 20px;
-   display: flex;
-   flex-direction: row;
-   flex-grow: 2;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   gap: 20px;
 }
 
 .form__heading {
-   border-bottom: 1px solid grey;
+   border-bottom: 1px solid #ddd;
 }
 
 .form__input {
    padding: 10px;
-   display: flex;
-   flex-grow: 1;
+   border: 1px solid #ddd;
 }
 
 @media (max-width: 767px) {
    .form {
-      flex-direction: column;
-      flex-wrap: wrap;
-   }
-
-   .button {
-      margin: 10px 0px 0px 0px;
+      grid-template-columns: 1fr;
    }
 }
