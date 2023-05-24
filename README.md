@@ -16,28 +16,5 @@ https://andriistafiniak.github.io/task-list/
 - Markdown
 
 ## How it works?
-### 1. Enter task
-
-![EnterImg](images/input.png)
-
-### 2.If you click the button you can add the task to the task list
-
-![buttonImg](images/mainButt.png)
-
-![buttonImg](images/allTasks.png)
-
-### 3. To mark the task as done, click on the green button 
-
-![buttonImg](images/greenButt.png)
-
-![buttonImg](images/doneTask.png)
-
-
-### 4. By clicking on the red button with the basket you will delete the task
-
-![buttonImg](images/basket.png)
-![buttonImg](images/tasksLineTh.png)
-
-
-
+![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTgxZTg4MzY2YmMwMTRlNDc0OThkYzg0MTVjYTg4YzVhMDFhMzNkYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/VGotapkzeZraGdxm1L/giphy.gif)
 
