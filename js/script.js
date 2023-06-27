@@ -35,14 +35,10 @@
       render();
    };
 
-
-
    const toggleHideDoneTasks = () => {
       hideDoneTasks = !hideDoneTasks;
       render();
    };
-
-
 
    const bindRemoveEvents = () => {
       const removeButton = document.querySelectorAll(".js-remove")
@@ -54,7 +50,6 @@
       });
    };
 
-
    const bindToggleDoneEvents = () => {
       const toggleDoneButtons = document.querySelectorAll(".js-toggleDone")
 
@@ -64,7 +59,6 @@
          });
       });
    };
-
 
    const renderTasks = () => {
       const taskToHTML = task =>
@@ -83,8 +77,6 @@
       const tasksElement = document.querySelector(".js-tasks");
       tasksElement.innerHTML = tasks.map(taskToHTML).join("");
    };
-
-
 
    const renderButtons = () => {
       const buttonsElement = document.querySelector(".buttons");
@@ -106,17 +98,19 @@
           </button>`;
    };
 
-
    const bindButtonsEvents = () => {
       const markAllDoneButton = document.querySelector(".js-markAllDone");
+
       if (markAllDoneButton) {
          markAllDoneButton.addEventListener("click", markAllTasksDone);
       }
       const toggleHideDoneTasksButtons = document.querySelector(".js-toggleHideDoneTasks");
+
       if (toggleHideDoneTasksButtons) {
          toggleHideDoneTasksButtons.addEventListener("click", toggleHideDoneTasks);
       }
    };
+
    const render = () => {
       renderTasks();
       bindRemoveEvents();
@@ -139,7 +133,6 @@
 
       newTaskElement.focus();
    };
-
 
    const init = () => {
       render();
