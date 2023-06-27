@@ -4,11 +4,11 @@
    margin: 0;
 }
 
-.list__content--done {
+.tasks__content--done {
    text-decoration: line-through;
 }
 
-.list__item {
+.tasks__item {
    display: grid;
    grid-template-columns: auto 1fr auto;
    gap: 10px;
@@ -16,4 +16,8 @@
    border-bottom: 1px solid #ddd;
    margin: 0px 0px 10px 0;
    padding: 5px;
+}
+
+.tasks__item--hidden {
+   display: none;
 }

@@ -14,3 +14,19 @@
 .section__body {
    padding: 20px;
 }
+
+.section__header {
+   border-bottom: 1px solid #ddd;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+@media (max-width: 767px) {
+   .section__headersection__header {
+      grid-template-columns: 1fr;
+   }
+}

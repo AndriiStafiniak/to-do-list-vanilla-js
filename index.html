@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="css/container.css">
    <link rel="stylesheet" href="css/buttons.css">
    <link rel="stylesheet" href="css/section.css">
-   <link rel="stylesheet" href="css/list.css">
+   <link rel="stylesheet" href="css/tasks.css">
    <link rel="stylesheet" href="css/form.css">
    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
    <meta charset="UTF-8">
@@ -34,7 +34,16 @@
          </div>
       </section>
       <section class="section">
-         <h2 class="section__heading">Lista zadań:</h2>
+         <header class="section__header" <h2 class="section__heading">Lista zadań:</h2>
+            <div class="buttons">
+               <button class="buttons__button js-hideDoneTasks">
+                  Ukryj ukończone
+               </button>
+               <button class="buttons__button js-toggleAllTasksDone">
+                  Ukończ wszystkie
+               </button>
+            </div>
+         </header>
          <div class="section__body">
             <ul class="js-tasks list"></ul>
       </section>

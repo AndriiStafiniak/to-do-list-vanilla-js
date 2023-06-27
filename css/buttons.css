@@ -3,28 +3,69 @@
    color: white;
    padding: 10px;
    border: none;
+   transition: 0.4s;
 }
 
 .button:hover {
    background-color: hsl(180, 100%, 35%);
+   scale: 1.1;
 }
 
 .button:active {
    background-color: hsl(180, 100%, 45%);
 }
 
-.list__button {
+.tasks__button {
    color: white;
    width: 30px;
    height: 30px;
+   transition: background 0.4s;
 }
 
-.list__button--toggleDone {
-   background: rgb(17, 251, 33);
+.tasks__button--remove:hover {
+   background: hsl(0, 100%, 70%);
+}
+
+.tasks__button--toggleDone {
+   background: hsl(124, 97%, 53%);
    color: white;
    align-self: center;
 }
 
-.list__button--remove {
-   background-color: red;
+.tasks__button--toggleDone:hover {
+   background: hsl(124, 97%, 73%);
+   ;
+}
+
+.tasks__button--remove {
+   background: hsl(0, 100%, 50%);
+}
+
+.buttons {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.buttons__button {
+   background: white;
+   color: hsl(180, 100%, 25%);
+   border: none;
+   margin: 0 0 0 20px;
+   transition: color 0.4s;
+}
+
+@media (max-width:767px) {
+   .buttons__button {
+      flex-basis: 100%;
+      margin: 10px;
+   }
+}
+
+.buttons__button:hover {
+   color: hsl(180, 100%, 45%);
+
+}
+
+.buttons__button:disabled {
+   color: #ccc;
 }
