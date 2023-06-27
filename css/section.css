@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 767px) {
-   .section__headersection__header {
+   .section__header {
       grid-template-columns: 1fr;
    }
 }
