@@ -3,10 +3,8 @@
    let hideDoneTasks = false;
 
    const removeTask = (index) => {
-      tasks = [
-         ...tasks.slice(0, index),
-         ...tasks.slice(index + 1),
-      ];
+      tasks = tasks.filter((_, taskindex) => index !== taskindex)
+
       render();
    };
 
