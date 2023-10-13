@@ -1,7 +1,7 @@
 # Hey, this is a simple to-do list. Made in pure JS 🙂
 
 ## Demo:
-https://andriistafiniak.github.io/to-do-list/
+https://andriistafiniak.github.io/to-do-list-vanilla-js/
 
 ![MainIMG](images/main.png)
 

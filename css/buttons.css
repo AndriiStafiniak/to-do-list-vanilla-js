@@ -8,7 +8,7 @@
 
 .button:hover {
    background-color: hsl(180, 100%, 35%);
-   scale: 1.1;
+   scale: 1.03;
 }
 
 .button:active {
